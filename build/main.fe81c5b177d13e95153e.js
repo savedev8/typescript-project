@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("RANDOM CONCLUSION 133333333333333"),document.body.style.backgroundColor="red"})();
