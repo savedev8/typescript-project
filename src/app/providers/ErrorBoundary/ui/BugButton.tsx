@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 
 export const BugButton = () => {
     const [errors, setErrors] = useState(false);
+    const { t } = useTranslation();
 
     const onThrow = () => setErrors(true);
 
     useEffect(() => {
-        throw new Error();
+        if (errors) {
+            throw new Error();
+        }
     }, [errors]);
 
     return (
@@ -16,7 +20,7 @@ export const BugButton = () => {
             onClick={onThrow}
             className={classNames('', {}, [])}
         >
-            throw new Error
+            {t('throw new Error')}
         </Button>
     );
 };
