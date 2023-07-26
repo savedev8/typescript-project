@@ -18,3 +18,14 @@ declare module '*.svg' {
 }
 
 declare const __IS_DEV__: boolean;
+
+declare module 'portfinder' {
+    export interface PortFinderOptions {
+      port?: number;
+      host?: string;
+      stopPort?: number;
+      attempts?: number;
+      before?: (port: number, callback: (err: Error | null, port: number) => void) => void;
+    }
+    export function getPortPromise(options?: PortFinderOptions): Promise<number>;
+}
