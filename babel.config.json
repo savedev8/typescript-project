@@ -1,6 +1,9 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-typescript"],
-     //есть typescript loader, preset для react опускаем
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-typescript",
+        ["@babel/preset-react", { "runtime": "automatic" }] //подставляется без импорта
+    ],
     "plugins": [
         "i18next-extract"
     ]
