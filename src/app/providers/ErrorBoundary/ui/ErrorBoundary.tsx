@@ -28,7 +28,7 @@ ErrorBoundaryProps, ErrorBoundaryState
         //   in ErrorBoundary (created by App)
         //   in div (created by App)
         //   in App
-        console.log(error, errorInfo);
+        // console.log(error, errorInfo);
     }
 
     render() {
