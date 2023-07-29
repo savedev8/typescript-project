@@ -3,7 +3,7 @@ import { Button, ThemeButton } from './Button';
 
 describe('Test render', () => {
     test('with only first param', () => {
-        render(<Button>TEST</Button>);
+        render(<Button>TES</Button>);
         expect(screen.getByText('TEST')).toBeInTheDocument();
     });
 
