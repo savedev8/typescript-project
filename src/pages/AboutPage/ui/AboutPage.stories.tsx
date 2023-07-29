@@ -7,13 +7,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 const meta = {
     title: 'pages/AboutPage',
     component: AboutPage,
-    // parameters: {
-    //     layout: 'centered',
-    // },
-    // tags: ['autodocs'],
-    // argTypes: {
-    //     backgroundColor: { control: 'color' },
-    // },
 } satisfies Meta<typeof AboutPage>;
 
 export default meta;

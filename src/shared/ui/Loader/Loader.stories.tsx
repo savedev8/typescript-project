@@ -8,9 +8,6 @@ const meta = {
     title: 'shared/Loader',
     component: Loader,
     tags: ['autodocs'],
-    // argTypes: {
-    //     backgroundColor: { control: 'color' },
-    // },
 } satisfies Meta<typeof Loader>;
 
 export default meta;

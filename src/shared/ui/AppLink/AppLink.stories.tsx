@@ -7,13 +7,6 @@ import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorato
 const meta = {
     title: 'shared/AppLink',
     component: AppLink,
-    // parameters: {
-    //     layout: 'centered',
-    // },
-    // tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
     args: {
         to: '/'
     },

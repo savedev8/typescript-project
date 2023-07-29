@@ -7,13 +7,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 const meta = {
     title: 'widget/Sidebar',
     component: Sidebar,
-    // parameters: {
-    //     layout: 'centered',
-    // },
-    // tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
 } satisfies Meta<typeof Sidebar>;
 
 export default meta;

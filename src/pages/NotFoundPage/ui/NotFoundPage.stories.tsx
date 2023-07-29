@@ -7,13 +7,6 @@ import { Theme } from 'app/providers/ThemeProvider';
 const meta = {
     title: 'pages/NotFoundPage',
     component: NotFoundPage,
-    // parameters: {
-    //     layout: 'centered',
-    // },
-    // tags: ['autodocs'],
-    // argTypes: {
-    //     backgroundColor: { control: 'color' },
-    // },
 } satisfies Meta<typeof NotFoundPage>;
 
 export default meta;
