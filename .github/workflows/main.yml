@@ -2,8 +2,8 @@ name: linting, testing, building
 on: 
   push:
     branches: [ main ]
-  pull-request: 
-    branches: [ main]
+  pull_request:
+    branches: [ main ]
 jobs:
   pipeline: 
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
   
   steps: 
     -uses: actions/checkout@v2
-    
+
     -name: Staring Node.js ${{ matrix.node-version }}
     uses: actions/setup-node@v1
     with: 
