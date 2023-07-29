@@ -8,5 +8,6 @@
         "src/widgets/Navbar/ui/Navbar.tsx": [
             "Главная"
         ]
-    }
+    },
+    "git.ignoreLimitWarning": true
 }
