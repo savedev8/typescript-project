@@ -9,9 +9,8 @@ i18n
         debug: false,
 
         interpolation: {
-            escapeValue: false, // not needed for react!!
+            escapeValue: false,
         },
-
         resources: { ru: { translations: {} } },
     });
 

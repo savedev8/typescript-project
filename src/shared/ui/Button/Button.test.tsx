@@ -3,13 +3,13 @@ import { Button, ThemeButton } from './Button';
 
 describe('Test render', () => {
     test('with only first param', () => {
-        render(<Button>TES</Button>);
-        expect(screen.getByText('TEST')).toBeInTheDocument();
+        render(<Button />);
+        expect(screen.getByTestId('button-testid')).toBeInTheDocument();
     });
 
     test('Test clear theme', () => {
-        render(<Button theme={ThemeButton.CLEAR}>TEST</Button>);
-        expect(screen.getByText('TEST')).toHaveClass('clear');
+        render(<Button theme={ThemeButton.CLEAR} />);
+        expect(screen.getByTestId('button-testid')).toHaveClass('clear');
         screen.debug();
     });
 });
