@@ -10,7 +10,7 @@ i18n
 
         interpolation: {
             escapeValue: false,
-
+        },
         resources: { ru: { translations: {} } },
     });
 

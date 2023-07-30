@@ -99,5 +99,5 @@
       }
     }
   },
-  "overrides": { "loki": { "@storybook/react": "$@storybook/react" } }    
+  "overrides": { "loki": { "@storybook/react": "$@storybook/react" } }  
 }
