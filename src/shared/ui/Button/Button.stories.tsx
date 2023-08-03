@@ -85,3 +85,19 @@ export const SquareSizeXL: Story = {
         size: ButtonSize.XL
     },
 };
+
+export const OutlineSizeL: Story = {
+    args: {
+        children: 'Text',
+        theme: ButtonTheme.OUTLINE,
+        size: ButtonSize.L
+    },
+};
+
+export const OutlineSizeXL: Story = {
+    args: {
+        children: 'Text',
+        theme: ButtonTheme.OUTLINE,
+        size: ButtonSize.XL
+    },
+};
