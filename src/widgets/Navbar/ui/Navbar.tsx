@@ -15,21 +15,6 @@ const INFO_TITLE = 'Информация';
 
 export const Navbar = ({ className }: NavbarProps) => (
     <div className={classNames(cls.navbar, {}, [className])}>
-        <div className={cls.links}>
-            <AppLink
-                theme={AppLinkTheme.SECONDARY}
-                to="/"
-                className={cls.mainLink}
-            >
-                {MAIN_TITLE}
-            </AppLink>
-            <AppLink
-                theme={AppLinkTheme.SECONDARY}
-                to="/about"
-            >
-                {INFO_TITLE}
-
-            </AppLink>
-        </div>
+        <div className={cls.links} />
     </div>
 );
