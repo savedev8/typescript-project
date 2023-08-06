@@ -20,7 +20,9 @@ export const AppLink: FC<AppLinkProps> = (props) => {
     } = props;
     return (
         // eslint-disable-next-line max-len, react/jsx-props-no-spreading
-        <Link to={to} className={classNames(cls.AppLink, {}, [className, cls[theme]])} {...otherProps}>
+        <Link to={to} 
+              className={classNames(cls.AppLink, {}, [className, cls[theme]])} 
+              {...otherProps}>
             {children}
         </Link>
     );

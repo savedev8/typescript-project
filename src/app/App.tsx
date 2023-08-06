@@ -4,9 +4,9 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense, useEffect, useState } from 'react';
+import { Modal } from 'shared/ui/Modal/Modal';
 import AppRouter from './providers/router/ui/AppRouter';
 import { useTheme } from './providers/ThemeProvider/lib/useTheme';
-import { Modal } from 'shared/ui/Modal/Modal';
 
 export const App = () => {
     const { theme } = useTheme();
