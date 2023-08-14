@@ -5,7 +5,6 @@ import { counterActions } from '../model/slice/counterSlice';
 import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
 export const Counter = () => {
-    const { t } = useTranslation();
     const dispatch = useDispatch();
     const counterValue = useSelector(getCounterValue);
 
@@ -24,13 +23,13 @@ export const Counter = () => {
                 onClick={increment}
                 data-testid="increment-btn"
             >
-                {t('increment')}
+                +
             </Button>
             <Button
                 data-testid="decrement-btn"
                 onClick={decrement}
             >
-                {t('decrement')}
+                -
             </Button>
         </div>
     );
