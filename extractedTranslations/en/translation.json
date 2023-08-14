@@ -1,5 +1,7 @@
 {
   "Cтраница не найдена": "Page not found",
+  "decrement": "decrement",
+  "increment": "increment",
   "throw new Error": "throw new Error",
   "Войти": "Войти",
   "Главная": "Главная",
