@@ -47,5 +47,7 @@ export default {
     moduleNameMapper: {
         '\\.(s?css)$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        // '^@axios$': '<rootDir>/src/common/axios',
+        '^axios$': require.resolve('axios'),
     },
 };

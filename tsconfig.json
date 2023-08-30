@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
@@ -12,7 +12,8 @@
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
   },
   "ts-node" : {
       "compilerOptions" : {
@@ -22,6 +23,6 @@
   "include": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
-    "./config/jest/setupTests.ts", "src/entities/Counter/ui/Counter.test.tsx",
+    // "./config/jest/setupTests.ts", "src/entities/Counter/ui/Counter.test.tsx",
   ]
 }
