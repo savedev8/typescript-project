@@ -8,5 +8,14 @@
       { "id": 1, "body": "some comment", "postId": 1 }
     ],
     "users": [{ "id": 1, "username": "admin", "password": "123" }],
-    "profile": { "name": "typicode" }
+    "profile": {
+      "first": "Натали",
+      "lastname": "Орлова",
+      "age": 29,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
+    }
 }
