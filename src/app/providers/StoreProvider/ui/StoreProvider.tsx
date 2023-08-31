@@ -19,9 +19,6 @@ export const StoreProvider = (props: StoreProviderProps) => {
         asyncReducers as ReducersMapObject<StateSchema>,
     );
 
-    type AppDispatch = typeof store.dispatch
-    useAppDispatch = () => useDispatch<AppDispatch>();
-
     return (
         <Provider store={store}>
             {children}
