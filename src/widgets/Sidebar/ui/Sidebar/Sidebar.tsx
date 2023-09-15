@@ -9,7 +9,7 @@ import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
 interface SidebarProps {
-    className?: string;
+    className?: string | undefined;
 }
 
 export const Sidebar = memo(({ className }: SidebarProps) => {
@@ -25,7 +25,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
             className={classNames(
                 cls.Sidebar,
                 { [cls.collapsed]: collapsed },
-                [className],
+                [className || ''],
             )}
         >
             <Button

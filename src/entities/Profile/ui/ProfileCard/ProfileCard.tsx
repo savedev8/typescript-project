@@ -20,7 +20,7 @@ export const ProfileCard = ({ className }: ProfileCardProps) => {
     const error = useSelector(getProfileError);
 
     return (
-        <div className={classNames(cls.ProfileCard, {}, [className])}>
+        <div className={classNames(cls.ProfileCard, {}, [className || ''])}>
             <div className={cls.header}>
                 <Text title={t('Профиль')} />
                 <Button
