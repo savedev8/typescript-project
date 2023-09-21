@@ -4,9 +4,9 @@ import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/Dynamic
 import {
     fetchProfileData,
     getProfileError,
-    getProfileForm,
+    // getProfileForm,
     getProfileIsLoading,
-    getProfileReadonly,
+    // getProfileReadonly,
     profileActions,
     ProfileCard,
     profileReducer,
@@ -14,8 +14,8 @@ import {
 import { useCallback, useEffect } from 'react';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
-import { Currency } from 'entities/Currency';
-import { Country } from 'entities/Country';
+// import { Currency } from 'entities/Currency';
+// import { Country } from 'entities/Country';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
