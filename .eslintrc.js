@@ -52,10 +52,11 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'import/no-mutable-exports': 'off',
-
+        'no-undef': 'off',
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts, tsx}'],

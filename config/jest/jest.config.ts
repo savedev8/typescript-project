@@ -10,6 +10,7 @@ export default {
     // automock: false,
     globals: {
         __IS_DEV__: true,
+        __API__: '',
     },
 
     // Stop running tests after `n` failures

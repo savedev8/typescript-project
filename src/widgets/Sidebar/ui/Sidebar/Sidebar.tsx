@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 
@@ -9,10 +9,10 @@ import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
 interface SidebarProps {
-    className?: string;
+    className?: string | undefined;
 }
 
-export const Sidebar = ({ className }: SidebarProps) => {
+export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
     const onToggle = () => {
@@ -25,7 +25,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
             className={classNames(
                 cls.Sidebar,
                 { [cls.collapsed]: collapsed },
-                [className],
+                [className || ''],
             )}
         >
             <Button
@@ -49,4 +49,4 @@ export const Sidebar = ({ className }: SidebarProps) => {
             </div>
         </div>
     );
-};
+});
