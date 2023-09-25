@@ -4,8 +4,10 @@ import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/Dynamic
 import {
     fetchProfileData,
     getProfileError,
+    getProfileForm,
     // getProfileForm,
     getProfileIsLoading,
+    getProfileReadonly,
     // getProfileReadonly,
     profileActions,
     ProfileCard,
@@ -14,8 +16,8 @@ import {
 import { useCallback, useEffect } from 'react';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
-// import { Currency } from 'entities/Currency';
-// import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
+import { Country } from 'entities/Country';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
@@ -72,7 +74,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <div className={classNames('', {}, [className])}>
+            <div className={classNames('', {}, [className || ''])}>
                 <ProfilePageHeader />
                 <ProfileCard
                     data={formData}
