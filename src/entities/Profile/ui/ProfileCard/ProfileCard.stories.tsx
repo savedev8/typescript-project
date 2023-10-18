@@ -1,7 +1,7 @@
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Meta, StoryObj } from '@storybook/react';
+import { Country } from 'entities/Country';
+import { Currency } from 'entities/Currency';
+import avatar from 'shared/assets/tests/storybook.jpg';
 import { ProfileCard } from './ProfileCard';
 
 const meta = {
@@ -12,8 +12,29 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Normal: Story = {};
-Normal.decorators = [StoreDecorator({})];
+export const Primary: Story = {
+    args: {
+        data: {
+            username: 'admin',
+            age: 29,
+            country: Country.Armenia,
+            lastname: 'orlova',
+            first: 'first',
+            currency: Currency.RUB,
+            city: 'Omsk',
+            avatar,
+        },
+    },
+};
 
-export const Dark: Story = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
+export const WithError: Story = {
+    args: {
+        error: 'true',
+    },
+};
+
+export const Loading: Story = {
+    args: {
+        isLoading: true,
+    },
+};
