@@ -26,7 +26,8 @@ server.post('/login', (req, res) => {
 
         const userFromBd = users.find(
             (user) => user.username === username && user.password === password,
-        );
+            );
+            console.log('НАЙДЕН');
 
         if (userFromBd) {
             return res.json(userFromBd);
