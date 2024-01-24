@@ -34,6 +34,18 @@
       "text": "some comment 3",
       "articleId": "3",
       "userId": "3"
+    },
+    {
+      "articleId": 1,
+      "userId": "1",
+      "text": "привет мир",
+      "id": "7iHWGEG"
+    },
+    {
+      "articleId": 1,
+      "userId": "1",
+      "text": "это я",
+      "id": "Sa0jKNF"
     }
   ],
   "articles": [
@@ -44,7 +56,9 @@
       "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmobisoftinfotech.com%2Fresources%2Fblog%2Fnext-js-framework%2F&psig=AOvVaw2oKauZ2hO9gHG3ba82JWsq&ust=1698240973859000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOier-TmjoIDFQAAAAAdAAAAABAE",
       "views": 1022,
       "createdAt": "26.02.2023",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -113,7 +127,7 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-        "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
+      "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
     },
     {
       "id": "2",
@@ -123,14 +137,39 @@
       "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
     }
   ],
-  "profile": {
-    "first": "Натали",
-    "lastname": "Орлова",
-    "age": 29,
-    "currency": "RUB",
-    "country": "Armenia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Наталиz",
+      "lastname": "Орлова",
+      "age": 29,
+      "currency": "RUB",
+      "country": "Armenia",
+      "city": "Moscow",
+      "username": "admin123",
+      "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Админ",
+      "lastname": "Админович",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fru%2Fvector%2Fcartoon-style-kitty-girl-avatar-character-red-hair-vector-illustration-575335278.html&psig=AOvVaw3sUX-SxapGA1lZ3Bh42wRm&ust=1706157029688000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCmtLSY9YMDFQAAAAAdAAAAABAD"
+    },
+    {
+      "id": "3",
+      "first": "Cергей",
+      "lastname": "Соседов",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Fbearded-man-avatar-man-vector-portrait_9385-36.jpg&tbnid=WXaAOva_wLbuRM&vet=12ahUKEwixl4HlmPWDAxUyaPEDHdGRBcUQMygAegQIARBk..i&imgrefurl=https%3A%2F%2Fru.freepik.com%2Fpremium-vector%2Fbearded-man-avatar-man-vector-portrait_4560141.htm&docid=7iV-SHYpsWZWIM&w=626&h=626&q=%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80&hl=ru&ved=2ahUKEwixl4HlmPWDAxUyaPEDHdGRBcUQMygAegQIARBk"
+    }
+  ]
 }
