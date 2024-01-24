@@ -12,6 +12,7 @@
 //     first: 'asd',
 //     city: 'asf',
 //     currency: Currency.USD,
+
 // };
 
 // describe('updateProfileData.test', () => {
