@@ -2,6 +2,7 @@ import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { fetchNextArticlesPage } from './fetchNextArticlesPage';
 import { fetchArticlesList } from '../fetchArticlesList/fetchArticlesList';
 import { ArticleView } from 'entities/Article';
+import { ArticleSortField, ArticleType } from 'entities/Article/model/types/article';
 
 jest.mock('../fetchArticlesList/fetchArticlesList');
 
@@ -16,7 +17,11 @@ describe('fetchNextArticlesPage.test', () => {
                 limit: 5,
                 isLoading: false,
                 hasMore: true,
-                _inited: false
+                _inited: false,
+                sort: ArticleSortField.CREATED,
+                search: '',
+                order: 'asc',
+                type: ArticleType.ALL,
             },
         });
 
@@ -35,7 +40,11 @@ describe('fetchNextArticlesPage.test', () => {
                 limit: 5,
                 isLoading: false,
                 hasMore: false,
-                _inited: false
+                _inited: false,
+                sort: ArticleSortField.CREATED,
+                search: '',
+                order: 'asc',
+                type: ArticleType.ALL,
             },
         });
 
