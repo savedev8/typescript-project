@@ -1,17 +1,16 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import {  Meta, StoryObj } from '@storybook/react';
 
 import { CommentList } from './CommentList';
 
-export default {
+const meta = {
     title: 'shared/CommentList',
     component: CommentList,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof CommentList>;
+    argTypes: {},
+} satisfies Meta<typeof CommentList>;
 
-const Template: ComponentStory<typeof CommentList> = (args) => <CommentList {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const Normal: Story = {
+    args: {}
+};

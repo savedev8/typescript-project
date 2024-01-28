@@ -1,21 +1,19 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { action } from '@storybook/addon-actions';
 import { Tabs } from './Tabs';
 
-export default {
+const meta = {
     title: 'shared/Tabs',
     component: Tabs,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof Tabs>;
+    argTypes: {},
+} satisfies Meta<typeof Tabs>;
 
-const Template: ComponentStory<typeof Tabs> = (args) => <Tabs {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Normal = Template.bind({});
-Normal.args = {
+export const Normal: Story = {
+    args: {
     tabs: [
         {
             value: 'tab 1',
@@ -32,4 +30,5 @@ Normal.args = {
     ],
     value: 'tab 2',
     onTabClick: action('onTabClick'),
+    }
 };

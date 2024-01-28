@@ -1,17 +1,19 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Page } from './Page';
 
-export default {
+const meta =  {
     title: 'shared/Page',
     component: Page,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof Page>;
+    argTypes: {},
+} satisfies Meta<typeof Page>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Normal: Story = {
+    args: {
+        children: 'normal',
+    }
+};
