@@ -19,7 +19,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'savedev8-path-checker-plugin'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -53,6 +53,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'import/no-mutable-exports': 'off',
         'no-undef': 'off',
+        'savedev8-path-checker-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
