@@ -54,11 +54,11 @@ export const Flex = (props: FlexProps) => {
     } = props;
 
     const classes = [
-        className,
-        justifyClasses[justify],
-        alignClasses[align],
-        directionClasses[direction],
-        gap && gapClasses[gap],
+        className || '',
+        justifyClasses[justify] || '',
+        alignClasses[align] || '',
+        directionClasses[direction] || '',
+        gap && gapClasses[gap] || '',
     ];
 
     const mods: Mods = {
