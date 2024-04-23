@@ -21,6 +21,9 @@ export enum AppRoutes {
     ARTICLE_EDIT = 'article_edit',
     // last
     NOT_FOUND = 'not_found',
+
+    TEST_LOC = 'test_loc',
+    TEST_PROD = 'test_prod',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -31,6 +34,9 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + :id
     [AppRoutes.ARTICLE_CREATE]: '/articles/new',
     [AppRoutes.ARTICLE_EDIT]: '/articles/:id/edit',
+
+    [AppRoutes.TEST_LOC]: 'http://localhost:4200/?utm_source=podnazhmem',
+    [AppRoutes.TEST_PROD]: 'https://podnazmem.ru/?utm_source=podnazhmem',
     // последний
     [AppRoutes.NOT_FOUND]: '*',
 };
@@ -68,6 +74,16 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         path: `${RoutePath.article_edit}`,
         element: <ArticleEditPage />,
         authOnly: true,
+    },
+    [AppRoutes.TEST_LOC]: {
+        path: `${RoutePath.test_loc}`,
+        element: <NotFoundPage />,
+        authOnly: false,
+    },
+    [AppRoutes.TEST_PROD]: {
+        path: `${RoutePath.test_prod}`,
+        element: <NotFoundPage />,
+        authOnly: false,
     },
     // last
     [AppRoutes.NOT_FOUND]: {

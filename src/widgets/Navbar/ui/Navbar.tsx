@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import React, { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUsername';
 import { useDispatch, useSelector } from 'react-redux';
@@ -40,6 +40,24 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     title={t('Edit App')}
                     theme={TextTheme.INVERTED}
                 />
+                <a href="http://localhost:4200/?utm_source=podnazhmem"
+                    // to={RoutePath.article_create}
+                    // theme={AppLinkTheme.SECONDARY}
+                    // className={cls.createBtn}
+                    target='_blank'
+                >
+                    {t('локалхост')}
+                </a>
+
+                <a href='https://podnazmem.ru/?utm_source=podnazhmem'
+                    // to={RoutePath.article_create}
+                    // theme={AppLinkTheme.SECONDARY}
+                    // className={cls.createBtn}
+                    target='_blank'
+                >
+                    {t('продакшен')}
+                </a>
+               
                 <AppLink
                     to={RoutePath.article_create}
                     theme={AppLinkTheme.SECONDARY}
