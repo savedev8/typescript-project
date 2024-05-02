@@ -23,7 +23,8 @@
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "storybook:build": "storybook build -c ./config/storybook",
     "test:ui:ci:two": "concurrently -s first -k \"npm run storybook:build\" \"npm run test:ui\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:slice": "node ./scripts/createSlice/index.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
