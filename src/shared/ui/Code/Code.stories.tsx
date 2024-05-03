@@ -13,7 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
     args: {
-    text: 'export default {\n'
+        text: 'export default {\n'
         + '    title: \'shared/Code\',\n'
         + '    component: Code,\n'
         + '    argTypes: {\n'
@@ -24,5 +24,5 @@ export const Normal: Story = {
         + 'const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;\n'
         + '\n'
         + 'export const Normal = Template.bind({});',
-    }
+    },
 };

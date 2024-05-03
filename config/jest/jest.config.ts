@@ -52,4 +52,13 @@ export default {
         // '^@axios$': '<rootDir>/src/common/axios',
         '^axios$': require.resolve('axios'),
     },
+    reporters: [
+        'default',
+        ['jest-html-reporters', {
+            publicPath: '<rootDir>/reports/unit',
+            filename: 'report.html',
+            openReport: true,
+            inlineSource: true,
+        }],
+    ],
 };

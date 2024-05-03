@@ -69,7 +69,7 @@ export const SizeL: Story = {
     args: {
         title: 'Size Lorem ipsun',
         text: 'Description Description Description Description',
-        size: TextSize.L
+        size: TextSize.L,
     },
 };
 
@@ -77,7 +77,7 @@ export const SizeM: Story = {
     args: {
         title: 'Size Lorem ipsun',
         text: 'Description Description Description Description',
-        size: TextSize.M
+        size: TextSize.M,
     },
 };
 
@@ -85,7 +85,6 @@ export const SizeS: Story = {
     args: {
         title: 'Size Lorem ipsun',
         text: 'Description Description Description Description',
-        size: TextSize.S
+        size: TextSize.S,
     },
 };
-

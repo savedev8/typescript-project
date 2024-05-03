@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import ArticleEditPage from './ArticleEditPage';
 
-const meta =  {
+const meta = {
     title: 'pages/ArticleEditPage',
     component: ArticleEditPage,
     argTypes: {},
@@ -11,4 +11,4 @@ const meta =  {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Normal: Story = {args: {}};
+export const Normal: Story = { args: {} };

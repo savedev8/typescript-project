@@ -96,12 +96,12 @@ export const Big: Story = {
     args: {
         view: ArticleView.BIG,
         article,
-    }
+    },
 };
 
 export const Small: Story = {
     args: {
         view: ArticleView.SMALL,
         article,
-    }
+    },
 };

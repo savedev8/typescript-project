@@ -35,7 +35,7 @@ export const ArticleDetailsPageHeader = memo((props: ArticleDetailsPageHeaderPro
             </Button>
             {canEdit && (
                 <Button
-                    className={''}
+                    className=""
                     theme={ButtonTheme.OUTLINE}
                     onClick={onEditArticle}
                 >

@@ -8,9 +8,9 @@ import { getUserAuthData, userActions } from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
-import cls from './Navbar.module.scss';
 import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
+import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
@@ -42,24 +42,28 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                     title={t('Edit App')}
                     theme={TextTheme.INVERTED}
                 />
-                <a href="http://localhost:4200/?utm_source=podnazhmem"
+                <a
+                    href="http://localhost:4200/?utm_source=podnazhmem"
                     // to={RoutePath.article_create}
                     // theme={AppLinkTheme.SECONDARY}
                     // className={cls.createBtn}
-                    target='_blank'
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     {t('локалхост')}
                 </a>
 
-                <a href='https://podnazmem.ru/?utm_source=podnazhmem'
+                <a
+                    href="https://podnazmem.ru/?utm_source=podnazhmem"
                     // to={RoutePath.article_create}
                     // theme={AppLinkTheme.SECONDARY}
                     // className={cls.createBtn}
-                    target='_blank'
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     {t('продакшен')}
                 </a>
-               
+
                 <AppLink
                     to={RoutePath.article_create}
                     theme={AppLinkTheme.SECONDARY}

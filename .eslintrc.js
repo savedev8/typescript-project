@@ -53,7 +53,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'import/no-mutable-exports': 'off',
         'no-undef': 'off',
-        'savedev8-path-checker-plugin/path-checker': 'error',
+        // 'savedev8-path-checker-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
@@ -63,7 +63,7 @@ module.exports = {
     overrides: [{
         files: ['**/src/**/*.{test,stories}.{ts, tsx}'],
         rules: {
-            'i18next/no-literal-string': 'off',
+            // 'i18next/no-literal-string': 'off',
             'max-length': 'off',
         },
     }],

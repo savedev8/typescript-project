@@ -27,8 +27,7 @@ const viewTypes = [
 export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
     const { className = '', view, onViewClick } = props;
 
-
-    //замыкание
+    // замыкание
     const onClick = (newView: ArticleView) => () => {
         onViewClick?.(newView);
     };

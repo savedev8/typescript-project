@@ -26,5 +26,5 @@ export const Normal: Story = {
                 content: 'third',
             },
         ],
-    }
+    },
 };

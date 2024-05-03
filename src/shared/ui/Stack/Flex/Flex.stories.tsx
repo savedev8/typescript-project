@@ -22,7 +22,7 @@ export const Row: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const RowGap4: Story = {
@@ -37,7 +37,7 @@ export const RowGap4: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const RowGap8: Story = {
@@ -52,7 +52,7 @@ export const RowGap8: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const RowGap16: Story = {
@@ -67,7 +67,7 @@ export const RowGap16: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const Column: Story = {
@@ -81,7 +81,7 @@ export const Column: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const ColumnGap16: Story = {
@@ -96,7 +96,7 @@ export const ColumnGap16: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };
 
 export const ColumnAlignEnd: Story = {
@@ -111,5 +111,5 @@ export const ColumnAlignEnd: Story = {
                 <div>first</div>
             </>
         ),
-    }
+    },
 };

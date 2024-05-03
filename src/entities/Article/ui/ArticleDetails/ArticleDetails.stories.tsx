@@ -3,8 +3,8 @@ import { Meta, StoryObj } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article } from 'entities/Article';
 import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { ArticleDetails } from './ArticleDetails';
 import { User } from 'entities/User';
+import { ArticleDetails } from './ArticleDetails';
 
 const meta = {
     title: 'entities/ArticleDetails',
@@ -21,8 +21,8 @@ const article: Article = {
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     user: {
-        id: "1",
-        username: "Alice",
+        id: '1',
+        username: 'Alice',
         avatar: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     },
     createdAt: '26.02.2022',
@@ -55,21 +55,21 @@ const article: Article = {
     ],
 };
 
-export const Normal: Story = { args: {  id: "1" }};
+export const Normal: Story = { args: { id: '1' } };
 Normal.decorators = [StoreDecorator({
     articleDetails: {
         data: article,
     },
 })];
 
-export const Loading: Story = { args: {  id: "1" }};
+export const Loading: Story = { args: { id: '1' } };
 Loading.decorators = [StoreDecorator({
     articleDetails: {
         isLoading: true,
     },
 })];
 
-export const Error: Story = { args: {  id: "1" }};
+export const Error: Story = { args: { id: '1' } };
 Error.decorators = [StoreDecorator({
     articleDetails: {
         error: 'error',

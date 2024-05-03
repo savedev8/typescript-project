@@ -1,8 +1,8 @@
-import { Meta, StoryObj} from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { ArticleSortSelector } from './ArticleSortSelector';
 import { ArticleSortField } from 'entities/Article/model/types/article';
 import { SortOrder } from 'shared/types';
+import { ArticleSortSelector } from './ArticleSortSelector';
 
 const meta = {
     title: 'entities/Article/ArticleSortSelector',
@@ -19,5 +19,5 @@ export const Normal: Story = {
         order: 'desc',
         onChangeOrder: (newOrder: SortOrder) => console.log(newOrder),
         onChangeSort: (newSort: ArticleSortField) => console.log(newSort),
-    }
+    },
 };

@@ -30,7 +30,7 @@ interface ProfileCardProps {
 
 export const ProfileCard = (props: ProfileCardProps) => {
     const {
-        className = '',
+        className,
         data,
         isLoading,
         error,

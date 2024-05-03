@@ -97,7 +97,7 @@ export const LoadingBig: Story = {
         articles: [],
         isLoading: true,
         view: ArticleView.BIG,
-    }
+    },
 };
 
 export const LoadingSmall: Story = {
@@ -105,7 +105,7 @@ export const LoadingSmall: Story = {
         articles: [],
         isLoading: true,
         view: ArticleView.SMALL,
-    }
+    },
 };
 
 export const ListSmall: Story = {
@@ -118,7 +118,7 @@ export const ListSmall: Story = {
             })),
         isLoading: false,
         view: ArticleView.SMALL,
-    }
+    },
 };
 
 export const ListBig: Story = {
@@ -131,5 +131,5 @@ export const ListBig: Story = {
             })),
         isLoading: false,
         view: ArticleView.BIG,
-    }
+    },
 };

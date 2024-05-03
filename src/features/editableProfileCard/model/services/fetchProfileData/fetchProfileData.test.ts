@@ -21,7 +21,7 @@ describe('fetchProfileData.test', () => {
 
         const result = await thunk.callThunk('1');
 
-        expect(thunk.api.get).toHavseBeenCalled();
+        expect(thunk.api.get).toHaveBeenCalled();
         expect(result.meta.requestStatus).toBe('fulfilled');
         expect(result.payload).toEqual(data);
     });
