@@ -7,7 +7,12 @@ const meta = {
     title: 'shared/Card',
     component: Card,
     argTypes: {
-        theme: { control: CardTheme.NORMAL },
+        theme: {
+            control: {
+                type: 'select', 
+                options: [CardTheme.NORMAL, CardTheme.OUTLINED]
+            }
+        },
     },
 } satisfies Meta<typeof Card>;
 

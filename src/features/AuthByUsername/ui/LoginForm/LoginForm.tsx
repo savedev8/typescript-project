@@ -17,7 +17,7 @@ import { getLoginError } from '../../model/selectors/getLoginError/getLoginError
 
 export interface LoginFormProps {
     className?: string;
-    onSuccess: () => void;
+    onSuccess?: () => void;
 }
 
 const initialReducers: ReducersList = {
@@ -43,7 +43,9 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     const onLoginClick = useCallback(async () => {
         const result = await dispatch(loginByUsername({ username, password }));
         if (result.meta.requestStatus === 'fulfilled') {
-            onSuccess();
+            if (onSuccess) {
+                onSuccess();
+            }
         }
     }, [onSuccess, dispatch, username, password]);
 

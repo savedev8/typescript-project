@@ -4,7 +4,6 @@ import { LoginSchema } from 'features/AuthByUsername';
 import {
     AnyAction, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { CombinedState } from 'redux';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
 import {
@@ -23,12 +22,12 @@ export interface StateSchema {
     [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 
     // Асинхронные редюсеры
-    loginForm?: LoginSchema;
-    profile?: ProfileSchema;
-    articleDetails?: ArticleDetailsSchema;
-    addCommentForm?: AddCommentFormSchema;
-    articlesPage?: ArticlesPageSchema;
-    articleDetailsPage?: ArticleDetailsPageSchema;
+    loginForm?: LoginSchema | null;
+    profile?: ProfileSchema  | null;
+    articleDetails?: ArticleDetailsSchema | null;
+    addCommentForm?: AddCommentFormSchema | null;
+    articlesPage?: ArticlesPageSchema | null;
+    articleDetailsPage?: ArticleDetailsPageSchema | null;
 }
 
 export type StateSchemaKey = keyof StateSchema;
@@ -36,7 +35,7 @@ export type MountedReducers = OptionalRecord<StateSchemaKey, boolean>;
 
 export interface ReducerManager {
     getReducerMap: () => ReducersMapObject<StateSchema>;
-    reduce: (state: StateSchema, action: AnyAction) => CombinedState<StateSchema>;
+    reduce: (state: StateSchema, action: AnyAction) => StateSchema;
     add: (key: StateSchemaKey, reducer: Reducer) => void;
     remove: (key: StateSchemaKey) => void;
     // true - вмонтирован, false - демонтирован
