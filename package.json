@@ -27,6 +27,8 @@
     "generate:slice": "node ./scripts/createSlice/index.js"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/plugin-transform-typescript": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
@@ -71,6 +73,7 @@
     "eslint-plugin-savedev8-path-checker-plugin": "^0.0.1",
     "eslint-plugin-storybook": "^0.8.0",
     "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
     "html-webpack-plugin": "^5.6.0",
     "husky": "^9.0.11",
     "identity-obj-proxy": "^3.0.0",
