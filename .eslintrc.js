@@ -53,7 +53,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'import/no-mutable-exports': 'off',
         'no-undef': 'off',
-        // 'savedev8-path-checker-plugin/path-checker': 'error',
+        // 'savedev8-path-checker-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
