@@ -21,6 +21,7 @@ const preview: Preview = {
                 date: /Date$/,
             },
         },
+        layout: 'fullscreen', // убираем padding в storybook
     },
 };
 
