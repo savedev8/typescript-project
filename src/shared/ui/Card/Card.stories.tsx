@@ -1,13 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { Text } from 'shared/ui/Text/Text';
+import { Text } from '@/shared/ui/Text';
 import { Card, CardTheme } from './Card';
 
 const meta = {
     title: 'shared/Card',
     component: Card,
     argTypes: {
-        theme: { control: CardTheme.NORMAL },
+        theme: {
+            control: {
+                type: 'select', 
+                options: [CardTheme.NORMAL, CardTheme.OUTLINED]
+            }
+        },
     },
 } satisfies Meta<typeof Card>;
 

@@ -19,7 +19,8 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'savedev8-path-checker-plugin'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 
+    'unused-imports'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -27,6 +28,7 @@ module.exports = {
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx'],
         }],
+        'unused-imports/no-unused-imports': 'error',
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'off',
@@ -53,7 +55,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'import/no-mutable-exports': 'off',
         'no-undef': 'off',
-        // 'savedev8-path-checker-plugin/path-checker': 'error',
+        // 'savedev8-path-checker-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

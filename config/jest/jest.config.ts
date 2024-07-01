@@ -51,6 +51,7 @@ export default {
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
         // '^@axios$': '<rootDir>/src/common/axios',
         '^axios$': require.resolve('axios'),
+        '^@/(.*)$': '<rootDir>/src/$1',
     },
     reporters: [
         'default',
