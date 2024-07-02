@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Card } from '@/shared/ui/Card';
 import { Input } from '@/shared/ui/Input';
-import { SortOrder } from '@/shared/types';
+import { SortOrder } from '@/shared/types/sort';
 import { useDebounce } from '@/shared/lib/hooks/useDebounce/useDebounce';
 import { ArticleType } from '@/entities/Article/model/consts/articleConsts';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
