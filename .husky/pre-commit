@@ -3,5 +3,5 @@
 
 # npm run lint:ts
 
-npx lint-staged
+# npx lint-staged // нужен
 

@@ -12,7 +12,7 @@ import { ArticlesPageSchema } from '../types/articlesPageSchema';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 
 const articlesAdapter = createEntityAdapter<Article>({
-    selectId: (article) => article.id,
+    selectId: (article: Article) => article.id,
 });
 
 export const getArticles = articlesAdapter.getSelectors<StateSchema>(

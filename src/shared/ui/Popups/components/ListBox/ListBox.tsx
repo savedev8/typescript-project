@@ -49,8 +49,8 @@ export function ListBox(props: ListBoxProps) {
                 value={value}
                 onChange={onChange}
             >
-                <HListBox.Button disabled={readonly} className={cls.trigger}>
-                    <Button disabled={readonly}>
+                <HListBox.Button  as="div">
+                    <Button disabled={readonly} className={cls.trigger}>
                         {value ?? defaultValue}
                     </Button>
                 </HListBox.Button>

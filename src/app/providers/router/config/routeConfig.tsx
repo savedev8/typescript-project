@@ -1,4 +1,3 @@
-import { RouteProps } from 'react-router-dom';
 import { MainPage } from '@/pages/MainPage';
 import { AboutPage } from '@/pages/AboutPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
@@ -9,7 +8,7 @@ import { ArticleEditPage } from '@/pages/ArticleEditPage';
 import { AdminPanelPage } from '@/pages/AdminPanelPage';
 import { UserRole } from '@/entities/User';
 import { ForbiddenPage } from '@/pages/ForbiddenPage';
-import { AppRoutes, RoutePath, getRouteAbout, getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteArticles, getRouteForbidden, getRouteLocal, getRouteProd, getRouteProfile } from '@/shared/const/router';
+import { AppRoutes, getRouteAbout, getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteArticles, getRouteForbidden, getRouteLocal, getRouteNotFound, getRouteProd, getRouteProfile } from '@/shared/const/router';
 import { AppRoutesProps } from '@/shared/types/router';
 
 
@@ -69,7 +68,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     },
     // last
     [AppRoutes.NOT_FOUND]: {
-        path: RoutePath.not_found,
+        path: getRouteNotFound(),
         element: <NotFoundPage />,
     },
 };
