@@ -6,7 +6,7 @@ export type {
     Article
 } from './model/types/article';
 
-export type {
+export { // проблемы с type
     ArticleView, ArticleSortField, ArticleType,
 } from './model/consts/articleConsts';
 

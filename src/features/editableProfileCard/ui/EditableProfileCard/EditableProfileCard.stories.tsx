@@ -6,9 +6,6 @@ import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDe
 const meta = {
     title: 'features/editableProfileCard/EditableProfileCard',
     component: EditableProfileCard,
-    // argTypes: {
-    //     backgroundColor: { control: 'color' },
-    // },
 } satisfies Meta<typeof EditableProfileCard>;
 
 export default meta;

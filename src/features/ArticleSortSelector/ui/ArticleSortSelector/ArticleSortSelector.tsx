@@ -8,7 +8,7 @@ import { ArticleSortField } from '@/entities/Article';
 
 interface ArticleSortSelectorProps {
     className?: string;
-    sort: ArticleSortField;
+    sort?: ArticleSortField;
     order: SortOrder;
     onChangeOrder: (newOrder: SortOrder) => void;
     onChangeSort: (newSort: ArticleSortField) => void;
