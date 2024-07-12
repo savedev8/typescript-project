@@ -13,6 +13,7 @@ import {
 import { ArticleDetailsCommentsSchema } from '../types/ArticleDetailsCommentsSchema';
 
 const commentsAdapter = createEntityAdapter<Comment>({
+    // @ts-ignore
     selectId: (comment) => comment.id,
 });
 

@@ -5,6 +5,7 @@ import { fetchArticleRecommendations } from '../services/fetchArticleRecommendat
 import { ArticleDetailsRecommendationsSchema } from '../types/ArticleDetailsRecommendationsSchema';
 
 const recommendationsAdapter = createEntityAdapter<Article>({
+    // @ts-ignore
     selectId: (article) => article.id,
 });
 
