@@ -1,5 +1,5 @@
-import type { Preview, StoryObj } from '@storybook/react';
-import 'app/styles/index.scss';
+import type { Preview } from '@storybook/react';
+// import 'app/styles/index.scss';
 
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider';
@@ -13,6 +13,7 @@ const preview: Preview = {
         SuspenseDecorator,
         (Story) => Story(),
     ],
+
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {
@@ -32,6 +33,8 @@ const preview: Preview = {
         }, 
           // storybook-addon-themes
     },
+
+    tags: ['autodocs']
 };
 
 export default preview;
