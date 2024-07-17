@@ -8,13 +8,13 @@ import { ArticleEditPage } from '@/pages/ArticleEditPage';
 import { AdminPanelPage } from '@/pages/AdminPanelPage';
 import { UserRole } from '@/entities/User';
 import { ForbiddenPage } from '@/pages/ForbiddenPage';
-import { AppRoutes, getRouteAbout, getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteArticles, getRouteForbidden, getRouteLocal, getRouteNotFound, getRouteProd, getRouteProfile } from '@/shared/const/router';
+import { AppRoutes, getRouteAbout, getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteArticles, getRouteForbidden, getRouteLocal, getRouteMain, getRouteProd, getRouteProfile } from '@/shared/const/router';
 import { AppRoutesProps } from '@/shared/types/router';
 
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.MAIN]: {
-        path: getRouteAbout(),
+        path: getRouteMain(),
         element: <MainPage />,
     },
     [AppRoutes.ABOUT]: {
@@ -68,7 +68,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     },
     // last
     [AppRoutes.NOT_FOUND]: {
-        path: getRouteNotFound(),
+        path: '*',
         element: <NotFoundPage />,
     },
 };

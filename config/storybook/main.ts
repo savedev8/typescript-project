@@ -6,6 +6,7 @@ export default {
     stories: [
         '../../src/**/*.stories.@(js|jsx|ts|tsx)',
     ],
+
     addons: [
         '@storybook/addon-links',
         {
@@ -18,10 +19,12 @@ export default {
         'storybook-addon-mock',
         'storybook-addon-themes',
     ],
-    framework: '@storybook/react',
-    core: {
-        builder: 'webpack5',
+
+    framework: {
+        name: '@storybook/react-webpack5',
+        options: {}
     },
+
     webpackFinal: async (config: Configuration) => {
         const paths = {
             build: '',
@@ -61,4 +64,10 @@ export default {
         // Return the altered config
         return config;
     },
+
+    docs: {},
+
+    typescript: {
+        reactDocgen: 'react-docgen-typescript'
+    }
 };
