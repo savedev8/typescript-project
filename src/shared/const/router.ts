@@ -27,4 +27,4 @@ export const getRouteAdmin = () => '/admin';
 export const getRouteForbidden = () => '/forbidden';
 export const getRouteLocal = () => 'http://localhost:4200/?utm_source=podnazhmem';
 export const getRouteProd = () => 'https://podnazmem.ru/?utm_source=podnazhmem';
-export const getRouteNotFound = () => '*';
+
