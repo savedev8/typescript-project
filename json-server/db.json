@@ -586,6 +586,32 @@
           ]
         }
       ]
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "S9AuR1i"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "AV70x_K"
     }
   ],
   "users": [
@@ -629,14 +655,14 @@
   "profile": [
     {
       "id": "1",
-      "first": "Чудо",
-      "lastname": "Орлова",
-      "age": 30,
-      "currency": "USD",
-      "country": "Russia",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
       "city": "Moscow",
-      "username": "admin123",
-      "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg"
+      "username": "testuser",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
     {
       "id": "2",
