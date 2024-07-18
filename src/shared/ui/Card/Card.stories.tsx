@@ -9,9 +9,9 @@ const meta = {
     argTypes: {
         theme: {
             control: {
-                type: 'select', 
-                options: [CardTheme.NORMAL, CardTheme.OUTLINED]
-            }
+                type: 'select',
+                options: [CardTheme.NORMAL, CardTheme.OUTLINED],
+            },
         },
     },
 } satisfies Meta<typeof Card>;

@@ -4,9 +4,9 @@ import { AvatarDropdown } from './AvatarDropdown';
 
 const meta = {
     title: 'features/avatarDropdown/AvatarDropdown',
-    component:  AvatarDropdown,
+    component: AvatarDropdown,
     argTypes: {},
-} satisfies Meta<typeof  AvatarDropdown>;
+} satisfies Meta<typeof AvatarDropdown>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

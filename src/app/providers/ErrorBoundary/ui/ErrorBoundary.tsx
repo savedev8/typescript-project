@@ -10,7 +10,8 @@ interface ErrorBoundaryState {
 }
 
 class ErrorBoundary extends React.Component<
-ErrorBoundaryProps, ErrorBoundaryState
+    ErrorBoundaryProps,
+    ErrorBoundaryState
 > {
     constructor(props: ErrorBoundaryProps) {
         super(props);
@@ -36,7 +37,11 @@ ErrorBoundaryProps, ErrorBoundaryState
         const { children } = this.props;
         if (hasError) {
             // You can render any custom fallback UI
-            return <Suspense fallback=""><PageError /></Suspense>;
+            return (
+                <Suspense fallback="">
+                    <PageError />
+                </Suspense>
+            );
         }
 
         return children;

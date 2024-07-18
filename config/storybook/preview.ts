@@ -30,11 +30,11 @@ const preview: Preview = {
                 { name: 'dark', class: Theme.DARK, color: '#000000' },
                 { name: 'orange', class: Theme.ORANGE, color: '#ffb005' },
             ],
-        }, 
-          // storybook-addon-themes
+        },
+        // storybook-addon-themes
     },
 
-    tags: ['autodocs']
+    tags: ['autodocs'],
 };
 
 export default preview;

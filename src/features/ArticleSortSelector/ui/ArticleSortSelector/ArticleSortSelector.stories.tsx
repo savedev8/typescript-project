@@ -8,24 +8,23 @@ const meta = {
     argTypes: {
         className: { control: 'text' },
         sort: {
-          control: 'select',
-          options: Object.values({}),
+            control: 'select',
+            options: Object.values({}),
         },
         order: {
-          control: 'select',
-          options: ['asc', 'desc'],
+            control: 'select',
+            options: ['asc', 'desc'],
         },
-      },
+    },
 } satisfies Meta<typeof ArticleSortSelector>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
-    args: { 
+    args: {
         order: 'desc',
         onChangeOrder: () => {},
-        onChangeSort: () => {}
+        onChangeSort: () => {},
     },
 };
-

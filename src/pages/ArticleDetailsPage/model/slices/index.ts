@@ -1,13 +1,12 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import { ArticleDetailsPageSchema } from '../types';
-import {
-    articleDetailsPageRecommendationsReducer,
-} from './articleDetailsPageRecommendationsSlice';
+import { articleDetailsPageRecommendationsReducer } from './articleDetailsPageRecommendationsSlice';
 import { articleDetailsCommentsReducer } from './articleDetailsCommentsSlice';
 
-export const articleDetailsPageReducer = combineReducers<ArticleDetailsPageSchema>({
-    // @ts-ignore
-    recommendations: articleDetailsPageRecommendationsReducer,
-    // @ts-ignore
-    comments: articleDetailsCommentsReducer,
-});
+export const articleDetailsPageReducer =
+    combineReducers<ArticleDetailsPageSchema>({
+        // @ts-ignore
+        recommendations: articleDetailsPageRecommendationsReducer,
+        // @ts-ignore
+        comments: articleDetailsCommentsReducer,
+    });

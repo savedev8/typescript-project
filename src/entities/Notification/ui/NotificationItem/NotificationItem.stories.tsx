@@ -15,9 +15,9 @@ export const Normal: Story = {
     args: {
         item: {
             id: '1',
-            title: "Hello",
+            title: 'Hello',
             description: 'Hello world',
-            href: 'http://localhost:'
-        }
+            href: 'http://localhost:',
+        },
     },
 };

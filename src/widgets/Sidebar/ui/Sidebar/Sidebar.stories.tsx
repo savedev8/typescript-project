@@ -14,14 +14,19 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {};
-Light.decorators = [StoreDecorator({
-    user: { authData: {} },
-})];
+Light.decorators = [
+    StoreDecorator({
+        user: { authData: {} },
+    }),
+];
 
 export const Dark: Story = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
-    user: { authData: {} },
-})];
+Dark.decorators = [
+    ThemeDecorator(Theme.DARK),
+    StoreDecorator({
+        user: { authData: {} },
+    }),
+];
 
 export const NoAuth: Story = {};
 NoAuth.decorators = [

@@ -1,13 +1,8 @@
 {
-    "i18n-ally.localesPaths": [
-        "public/locales",
-        "src/shared/i18n"
-    ],
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/i18n"],
     "i18n-ally.keystyle": "nested",
     "i18n-ally.extract.ignoredByFiles": {
-        "src/widgets/Navbar/ui/Navbar.tsx": [
-            "Главная"
-        ]
+        "src/widgets/Navbar/ui/Navbar.tsx": ["Главная"]
     },
     "git.ignoreLimitWarning": true
 }

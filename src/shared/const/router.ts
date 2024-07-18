@@ -14,7 +14,7 @@ export enum AppRoutes {
 
     TEST_LOC = 'test_loc',
     TEST_PROD = 'test_prod',
-};
+}
 
 export const getRouteMain = () => '/';
 export const getRouteAbout = () => '/about';
@@ -25,6 +25,6 @@ export const getRouteArticleCreate = () => '/articles/new';
 export const getRouteArticleEdit = (id: string) => `/articles/${id}/edit`;
 export const getRouteAdmin = () => '/admin';
 export const getRouteForbidden = () => '/forbidden';
-export const getRouteLocal = () => 'http://localhost:4200/?utm_source=podnazhmem';
+export const getRouteLocal = () =>
+    'http://localhost:4200/?utm_source=podnazhmem';
 export const getRouteProd = () => 'https://podnazmem.ru/?utm_source=podnazhmem';
-
