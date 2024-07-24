@@ -4,7 +4,6 @@ import ArticlesPage from './ArticlesPage';
 const meta = {
     title: 'pages/ArticlesPage',
     component: ArticlesPage,
-
 } satisfies Meta<typeof ArticlesPage>;
 
 export default meta;

@@ -24,17 +24,17 @@ export const Primary: Story = {
             currency: Currency.USD,
             avatar,
         },
-    }
+    },
 };
 
 export const withError: Story = {
-    args:{
+    args: {
         error: 'true',
-    }
+    },
 };
 
 export const Loading: Story = {
     args: {
         isLoading: true,
-    }
+    },
 };

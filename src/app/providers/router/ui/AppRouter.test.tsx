@@ -1,7 +1,11 @@
 import { screen } from '@testing-library/react';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import AppRouter from './AppRouter';
-import { getRouteAbout, getRouteAdmin, getRouteProfile } from '@/shared/const/router';
+import {
+    getRouteAbout,
+    getRouteAdmin,
+    getRouteProfile,
+} from '@/shared/const/router';
 import { UserRole } from '@/entities/User';
 
 describe('app/router/AppRouter', () => {
@@ -9,7 +13,7 @@ describe('app/router/AppRouter', () => {
         componentRender(<AppRouter />, {
             route: getRouteAbout(),
         });
- 
+
         const page = await screen.findByTestId('AboutPage'); // из за ленивой загрузки вызов асинхронный
         expect(page).toBeInTheDocument();
     });

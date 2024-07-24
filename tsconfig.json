@@ -1,29 +1,30 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "isolatedModules": false
     },
-    "module": "ESNext",
-    "target": "es5",
-    "jsx": "react-jsx",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "isolatedModules": false,
-  },
-  "ts-node" : {
-      "compilerOptions" : {
-          "module": "CommonJS",
-      }
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
     },
-  "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./config/jest/setupTests.ts", "src/entities/Counter/ui/Counter.test.tsx",
-  ]
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./config/jest/setupTests.ts",
+        "src/entities/Counter/ui/Counter.test.tsx"
+    ]
 }

@@ -10,12 +10,12 @@ export default function (): PluginItem {
                     JSXIdentifier(current) {
                         const nodeName = current.node.name;
 
-                        if(forbidden.includes(nodeName)) {
+                        if (forbidden.includes(nodeName)) {
                             current.parentPath.remove();
                         }
-                    }
-                })
-            }
-        }
-    }
+                    },
+                });
+            },
+        },
+    };
 }

@@ -6,7 +6,11 @@ const meta = {
     title: 'shared/ListBox',
     component: ListBox,
     decorators: [
-        (Story) => <div style={{ padding: 100 }}><Story /></div>,
+        (Story) => (
+            <div style={{ padding: 100 }}>
+                <Story />
+            </div>
+        ),
     ],
 } satisfies Meta<typeof ListBox>;
 
@@ -21,7 +25,7 @@ export const Normal: Story = {
             { content: '1asfasfasf21233', value: '1232' },
         ],
         onChange: () => {},
-    }
+    },
 };
 
 export const topLeft: Story = {
@@ -33,7 +37,7 @@ export const topLeft: Story = {
             { content: '1asfasfasf21233', value: '1232' },
         ],
         onChange: () => {},
-    }
+    },
 };
 
 export const topRight: Story = {
@@ -45,7 +49,7 @@ export const topRight: Story = {
             { content: '1asfasfasf21233', value: '1232' },
         ],
         onChange: () => {},
-    }
+    },
 };
 
 export const bottomLeft: Story = {
@@ -57,7 +61,7 @@ export const bottomLeft: Story = {
             { content: '1asfasfasf21233', value: '1232' },
         ],
         onChange: () => {},
-    }
+    },
 };
 
 export const bottomRight: Story = {
@@ -69,5 +73,5 @@ export const bottomRight: Story = {
             { content: '1asfasfasf21233', value: '1232' },
         ],
         onChange: () => {},
-    }
+    },
 };

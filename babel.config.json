@@ -4,7 +4,5 @@
         "@babel/preset-typescript",
         ["@babel/preset-react", { "runtime": "automatic" }] //подставляется без импорта
     ],
-    "plugins": [
-        "i18next-extract"
-    ]
+    "plugins": ["i18next-extract"]
 }

@@ -8,9 +8,21 @@ import { ArticleEditPage } from '@/pages/ArticleEditPage';
 import { AdminPanelPage } from '@/pages/AdminPanelPage';
 import { UserRole } from '@/entities/User';
 import { ForbiddenPage } from '@/pages/ForbiddenPage';
-import { AppRoutes, getRouteAbout, getRouteAdmin, getRouteArticleCreate, getRouteArticleDetails, getRouteArticleEdit, getRouteArticles, getRouteForbidden, getRouteLocal, getRouteMain, getRouteProd, getRouteProfile } from '@/shared/const/router';
+import {
+    AppRoutes,
+    getRouteAbout,
+    getRouteAdmin,
+    getRouteArticleCreate,
+    getRouteArticleDetails,
+    getRouteArticleEdit,
+    getRouteArticles,
+    getRouteForbidden,
+    getRouteLocal,
+    getRouteMain,
+    getRouteProd,
+    getRouteProfile,
+} from '@/shared/const/router';
 import { AppRoutesProps } from '@/shared/types/router';
-
 
 export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.MAIN]: {
@@ -37,7 +49,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         authOnly: true,
     },
     [AppRoutes.ARTICLE_CREATE]: {
-        path:  getRouteArticleCreate(),
+        path: getRouteArticleCreate(),
         element: <ArticleEditPage />,
         authOnly: true,
     },

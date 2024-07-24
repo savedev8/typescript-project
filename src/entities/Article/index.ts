@@ -1,13 +1,12 @@
+export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
+
+export type { Article } from './model/types/article';
+
 export {
-    ArticleDetails,
-} from './ui/ArticleDetails/ArticleDetails';
-
-export type {
-    Article
-} from './model/types/article';
-
-export { // проблемы с type
-    ArticleView, ArticleSortField, ArticleType,
+    // проблемы с type
+    ArticleView,
+    ArticleSortField,
+    ArticleType,
 } from './model/consts/articleConsts';
 
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';

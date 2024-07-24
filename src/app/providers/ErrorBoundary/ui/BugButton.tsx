@@ -16,10 +16,7 @@ export const BugButton = () => {
     }, [errors]);
 
     return (
-        <Button
-            onClick={onThrow}
-            className={classNames('', {}, [])}
-        >
+        <Button onClick={onThrow} className={classNames('', {}, [])}>
             {t('throw new Error')}
         </Button>
     );
