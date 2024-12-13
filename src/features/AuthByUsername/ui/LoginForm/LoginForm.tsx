@@ -1,14 +1,14 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
-import { Input } from '@/shared/ui/Input';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
+import { Input } from '@/shared/ui/deprecated/Input';
 import { useSelector } from 'react-redux';
 import { memo, useCallback } from 'react';
 import {
     loginActions,
     loginReducer,
 } from '@/features/AuthByUsername/model/slice/loginSlice';
-import { Text, TextTheme } from '@/shared/ui/Text';
+import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 import {
     DynamicModuleLoader,
     ReducersList,

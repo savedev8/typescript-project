@@ -1,4 +1,4 @@
-import { Avatar } from '@/shared/ui/Avatar';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Meta, StoryObj } from '@storybook/react';
 import AvatarImg from './storybook.jpg';
 
