@@ -1,40 +1,42 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
-import avatar from '@/shared/assets/tests/storybook.jpg';
-import { ProfileCard } from './ProfileCard';
+// import React from 'react';
+// import { ComponentMeta, ComponentStory } from '@storybook/react';
+// import { Country } from '@/entities/Country';
+// import { Currency } from '@/entities/Currency';
+// import avatar from '@/shared/assets/tests/storybook.jpg';
+// import { ProfileCard } from './ProfileCard';
 
-const meta = {
-    title: 'entities/ProfileCard',
-    component: ProfileCard,
-} satisfies Meta<typeof ProfileCard>;
+// export default {
+//     title: 'entities/ProfileCard',
+//     component: ProfileCard,
+//     argTypes: {
+//         backgroundColor: { control: 'color' },
+//     },
+// } as ComponentMeta<typeof ProfileCard>;
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+// const Template: ComponentStory<typeof ProfileCard> = (args) => (
+//     <ProfileCard {...args} />
+// );
 
-export const Primary: Story = {
-    args: {
-        data: {
-            username: 'admin',
-            age: 22,
-            country: Country.Ukraine,
-            lastname: 'ulbi tv',
-            first: 'asd',
-            city: 'asf',
-            currency: Currency.USD,
-            avatar,
-        },
-    },
-};
+// export const Primary = Template.bind({});
+// Primary.args = {
+//     data: {
+//         username: 'admin',
+//         age: 22,
+//         country: Country.Ukraine,
+//         lastname: 'ulbi tv',
+//         first: 'asd',
+//         city: 'asf',
+//         currency: Currency.USD,
+//         avatar,
+//     },
+// };
 
-export const withError: Story = {
-    args: {
-        error: 'true',
-    },
-};
+// export const withError = Template.bind({});
+// withError.args = {
+//     error: 'true',
+// };
 
-export const Loading: Story = {
-    args: {
-        isLoading: true,
-    },
-};
+// export const Loading = Template.bind({});
+// Loading.args = {
+//     isLoading: true,
+// };
