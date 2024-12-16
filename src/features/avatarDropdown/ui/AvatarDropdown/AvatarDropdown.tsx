@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { memo, useCallback } from 'react';
+import React, { memo, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Avatar as AvatarDeprecated } from '@/shared/ui/deprecated/Avatar';
@@ -10,7 +10,11 @@ import {
     isUserManager,
     userActions,
 } from '@/entities/User';
-import { getRouteAdmin, getRouteProfile } from '@/shared/const/router';
+import {
+    getRouteAdmin,
+    getRouteProfile,
+    getRouteSettings,
+} from '@/shared/const/router';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Dropdown } from '@/shared/ui/redesigned/Popups';
 import { Avatar } from '@/shared/ui/redesigned/Avatar';
@@ -46,6 +50,10 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                   },
               ]
             : []),
+        {
+            content: t('Настройки'),
+            href: getRouteSettings(),
+        },
         {
             content: t('Профиль'),
             href: getRouteProfile(authData.id),
