@@ -6,6 +6,8 @@
   "decrement": "decrement",
   "increment": "increment",
   "throw new Error": "throw new Error",
+  "{{count}} просмотров": "{{count}} просмотров",
+  "{{count}} просмотров_plural": "{{count}} просмотров_plural",
   "Админ панель": "Админ панель",
   "Админка": "Админка",
   "Айти": "Айти",
