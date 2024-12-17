@@ -43,7 +43,7 @@ export const useSidebarItems = () => {
     ];
 
     if (userData) {
-        sidebarItemsList.push(
+        sidebarItemsList?.push(
             {
                 path: getRouteProfile(userData.id),
                 Icon: toggleFeatures({
