@@ -4,6 +4,11 @@ import { FeatureFlags } from '@/shared/types/featureFlags';
 // если нужна реактивность - лучше в state и создать хук, здесь нет необходимости
 let featureFlags: FeatureFlags = {};
 
+
+// context
+// state
+// reload page
+// костыль с forceUpdate, но не рекомендовано
 export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
     if (newFeatureFlags) {
         featureFlags = newFeatureFlags;
@@ -11,7 +16,7 @@ export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
 }
 
 export function getFeatureFlag(flag: keyof FeatureFlags) {
-    return featureFlags?.[flag] ?? true; // убрать заглушку
+    return featureFlags?.[flag];
 }
 
 export function getAllFeatureFlags() {

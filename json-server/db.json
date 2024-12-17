@@ -650,7 +650,8 @@
       ],
       "features": {
         "isArticleRatingEnabled": false,
-        "isCounterEnabled": false
+        "isCounterEnabled": false,
+        "isAppRedesigned": true
       },
       "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1681895316_kartinki-pibig-info-p-kartinki-dlya-profilya-arti-instagram-1.jpg",
       "jsonSettings": {
