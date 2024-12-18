@@ -17,9 +17,9 @@ import {
     getRouteArticleEdit,
     getRouteArticles,
     getRouteForbidden,
-    getRouteLocal,
     getRouteMain,
-    getRouteProd,
+    // getRouteLocal,
+    // getRouteProd,
     getRouteProfile,
     getRouteSettings,
 } from '@/shared/const/router';
@@ -74,16 +74,16 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         path: getRouteForbidden(),
         element: <ForbiddenPage />,
     },
-    [AppRoutes.TEST_LOC]: {
-        path: getRouteLocal(),
-        element: <NotFoundPage />,
-        authOnly: false,
-    },
-    [AppRoutes.TEST_PROD]: {
-        path: getRouteProd(),
-        element: <NotFoundPage />,
-        authOnly: false,
-    },
+    // [AppRoutes.TEST_LOC]: {
+    //     path: getRouteLocal(),
+    //     element: <NotFoundPage />,
+    //     authOnly: false,
+    // },
+    // [AppRoutes.TEST_PROD]: {
+    //     path: getRouteProd(),
+    //     element: <NotFoundPage />,
+    //     authOnly: false,
+    // },
     // last
     [AppRoutes.NOT_FOUND]: {
         path: '*',
