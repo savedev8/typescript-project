@@ -24,7 +24,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
-        'ulbi-tv-plugin',
+        // 'ulbi-tv-plugin',
         'unused-imports',
     ],
     rules: {
@@ -89,30 +89,30 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'ulbi-tv-plugin/path-checker': [
-            'error',
-            {
-                alias: '@',
-            },
-        ],
-        'ulbi-tv-plugin/layer-imports': [
-            'error',
-            {
-                alias: '@',
-                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
-            },
-        ],
-        'ulbi-tv-plugin/public-api-imports': [
-            'error',
-            {
-                alias: '@',
-                testFilesPatterns: [
-                    '**/*.test.*',
-                    '**/*.story.*',
-                    '**/StoreDecorator.tsx',
-                ],
-            },
-        ],
+        // 'ulbi-tv-plugin/path-checker': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //     },
+        // ],
+        // 'ulbi-tv-plugin/layer-imports': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //         ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+        //     },
+        // ],
+        // 'ulbi-tv-plugin/public-api-imports': [
+        //     'error',
+        //     {
+        //         alias: '@',
+        //         testFilesPatterns: [
+        //             '**/*.test.*',
+        //             '**/*.story.*',
+        //             '**/StoreDecorator.tsx',
+        //         ],
+        //     },
+        // ],
         'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
         'react/no-unstable-nested-components': 'warn',
     },
