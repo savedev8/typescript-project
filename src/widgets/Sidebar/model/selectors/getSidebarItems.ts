@@ -21,6 +21,7 @@ import { toggleFeatures } from '@/shared/lib/features';
 
 export const useSidebarItems = () => {
     const userData = useSelector(getUserAuthData);
+    console.log('USER DATA', userData);
     const sidebarItemsList: SidebarItemType[] = [
         {
             path: getRouteMain(),
